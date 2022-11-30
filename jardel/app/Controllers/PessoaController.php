@@ -2,11 +2,17 @@
 
 namespace App\Controllers;
 
+use App\Models\PessoaModel;
+
 class PessoaController extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+        $pessoaModel = new PessoaModel();
+        $data["Dados"] = $pessoaModel -> findAll();
+
+        
+        return view('Pessoa/list');
     }
 
     //formulario em branco

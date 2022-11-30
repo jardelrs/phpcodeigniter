@@ -37,6 +37,16 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+// Equivalent to the following:
+$routes->get('pessoa/new', 'PessoaController::new');
+$routes->post('pessoa', 'PessoaController::create');
+$routes->get('pessoa', 'PessoaController::index');
+//$routes->get('pessoa/(:segment)', 'PessoaController::show/$1');
+$routes->get('pessoa/(:segment)/edit', 'PessoaController::edit/$1');
+$routes->put('pessoa/(:segment)', 'PessoaController::update/$1');
+//$routes->patch('pessoa/(:segment)', 'PessoaController::update/$1');
+$routes->delete('pessoa/(:segment)', 'PessoaController::delete/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
