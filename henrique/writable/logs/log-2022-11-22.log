@@ -1,0 +1,22 @@
+CRITICAL - 2022-11-22 19:53:01 --> Undefined variable: Dados
+in APPPATH\Views\Pessoa\list.php on line 11.
+ 1 APPPATH\Views\Pessoa\list.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Dados', 'APPPATH\\Views\\Pessoa\\list.php', 11, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pessoa\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Pessoa/list', [], true)
+ 5 APPPATH\Controllers\PessoaController.php(19): view('Pessoa/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PessoaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PessoaController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 19:56:27 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Pessoa\list.php on line 12.
+ 1 APPPATH\Views\Pessoa\list.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\Pessoa\\list.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pessoa\\list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Pessoa/list', [], true)
+ 5 APPPATH\Controllers\PessoaController.php(17): view('Pessoa/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PessoaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PessoaController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
