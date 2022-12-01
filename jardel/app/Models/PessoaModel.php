@@ -14,7 +14,7 @@ class PessoaModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['name', 'email', 'telefone', ];
+    protected $allowedFields = ['name', 'email', 'telefone' ];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

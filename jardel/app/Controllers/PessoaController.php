@@ -11,8 +11,8 @@ class PessoaController extends BaseController
         $pessoaModel = new PessoaModel();
         $data["Dados"] = $pessoaModel -> findAll();
 
-        
-        return view('Pessoa/list');
+
+        return view('Pessoa/list', $data);
     }
 
     //formulario em branco
